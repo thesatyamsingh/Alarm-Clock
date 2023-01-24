@@ -1,6 +1,6 @@
 // The display to show current time
 const currentTime = document.querySelector('h1');
-const audio = new Audio('assets/ringtone.mp3');
+const audio = new Audio('ringtone/ringtone.mp3');
 
 audio.loop = true;
 
@@ -68,8 +68,8 @@ remove = (value) => {
 
 // Adds newAlarm to the upcoming-alarms-list as a new list item 
 function addNewAlarm(newAlarm) {
-    const html =
-        `<li class = "time-list">        
+    const html = 
+    `<li class = "time-list">        
         <span class="time">${newAlarm}</span>
         <button class="deleteAlarm" onclick = "remove(this.value)" value=${newAlarm}>Delete Alarm</button>       
     </li>`
